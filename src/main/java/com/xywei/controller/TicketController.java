@@ -47,7 +47,9 @@ public class TicketController {
 //		UserResult result = restTemplate.getForObject(url, UserResult.class, userId);
 
 		String send2RabbitMQ = rabbitMQService.send2RabbitMQ(userId);
+
 		System.out.println("client sent to server "+send2RabbitMQ);
+
 		UserResult result = null;
 		// 如何返回用户抢票是否成功的信息？
 		return result;
