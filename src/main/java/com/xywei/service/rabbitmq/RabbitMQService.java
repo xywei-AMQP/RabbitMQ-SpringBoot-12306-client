@@ -38,6 +38,7 @@ public class RabbitMQService {
 
 	public String send2RabbitMQ(int userId) {
 		rabbitTemplate.convertAndSend(exchangeClient2Server, routingKeyClient2Server, userId);
+		// TODO 发送过去之后，用户如何得知自己抢票的结果？这一步怎么处理？
 		return null;
 	}
 
