@@ -31,4 +31,10 @@ public class UserResult {
 		this.resultMessage = resultMessage;
 	}
 
+	@Override
+	public String toString() {
+		return "UserResult [userId=" + userId + ", resultMessage=" + resultMessage + "]";
+	}
+	
+
 }
