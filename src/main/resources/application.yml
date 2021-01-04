@@ -1,2 +1,13 @@
 server:
   port: 10001
+
+  
+spring:
+  rabbitmq:
+    host: 192.168.11.138
+    port: 5672
+    virtual-host: com.12306
+    username: my12306
+    password: my12306
+    
+    
